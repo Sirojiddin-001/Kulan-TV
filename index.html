@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kulan TV</title>
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/uikit.css">
+  <link rel="stylesheet" href="./assets/css/video-js.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="manifest" href="./manifest.json">
+  <script src="./assets/js/uikit.min.js"></script>
+  <script src="./assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-light">
+  <header>
+    <nav class="uk-navbar-container uk-light " uk-navbar="mode: click">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#">Kulan TV</a>
+      </div>
+
+      <div class="uk-navbar-right">
+        <a id="toggle" class="uk-navbar-toggle" uk-icon="icon:menu; ratio: 1.5" href="#"></a>
+      </div>
+    </nav>
+  </header>
+
+  <main uk-grid>
+    <div id="content" class="uk-width-expand">
+      <div id="chanell_name"></div>
+      <video id="video" class="video-js" controls poster="./assets/img/cover.png"></video>
+    </div>
+
+    <div id="list" class="uk-width-1-3@m uk-animation-slide-right-small">
+      <div id="select"></div>
+      <ul id="data-list" class="uk-list uk-list-striped"></ul>
+    </div>
+  </main>
+
+  <script src="./assets/js/select.js"></script>
+  <script src="./assets/js/video.js"></script>
+  <script src="./assets/js/hls.min.js"></script>
+  <script src="./assets/js/firebase.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
